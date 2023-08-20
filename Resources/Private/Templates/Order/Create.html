@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:c="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers" data-namespace-typo3-fluid="true">
+<br /><br />
+<h1>Create an Order</h1>
+<br />
+<h4>Order great things</h4>
+<f:form name="order" object="{order}" action="finish">
+    <label>Email Address</label><br />
+    <f:form.textfield property="email" type="email" />
+    <br /><br />
+    <label>How many things do you want to order</label><br />
+    <f:form.textfield property="amount" type="number" />
+    <br /><br />
+    <f:form.submit value="Order" />
+</f:form>
+<br /><br />
+<br /><br />
+</html>

@@ -1,0 +1,16 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  DanielGoerz\MessengerExample\:
+    resource: '../Classes/*'
+
+  DanielGoerz\MessengerExample\MessageHandler\OrderReceivedHandler:
+    tags:
+      - name: 'messenger.message_handler'
+
+  DanielGoerz\MessengerExample\MessageHandler\OrderCreatedHandler:
+    tags:
+      - name: 'messenger.message_handler'
